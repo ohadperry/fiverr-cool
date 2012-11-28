@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# test data
+
+one:
+  pic_url: www.youtube.com
+  rating: 1400
+
+two:
+  pic_url: www.google.com
+  rating: 1350

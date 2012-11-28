@@ -1,0 +1,21 @@
+<div id="main">
+  <h1>The Pics List</h1>
+
+  <table class="picsTable">
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @pics.each do |pic| %>
+        <tr>
+          <td><%= image_tag(pic.pic_url, :class => 'list_pic') %></td>
+          <td>rating:<br><%= pic.rating.round(0) %></td>
+          <td><%= link_to 'Delete This Pic', pic,
+                          :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
+    </tbody>
+  </table>
+</div>
