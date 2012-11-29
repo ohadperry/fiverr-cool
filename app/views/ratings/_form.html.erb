@@ -1,4 +1,4 @@
-<%= form_for @rating, :html => {:multipart=>true} do |f| %>
+<%= form_for @rating, :html => {:multipart => true} do |f| %>
     <% if @rating.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
@@ -11,15 +11,15 @@
         </div>
     <% end %>
 
-    <div class="field">
-       <%= f.file_field :pic_url %>
-    </div>
+    <p>
+      <%= f.file_field :pic_url %>
+    </p>
 
-    <div class="field">
+    <p>
       <%= f.label :remote_pic_url_url, 'or image url' %>
       <br/>
       <%= f.text_field :remote_pic_url_url %>
-    </div>
+    </p>
 
     <div class="actions">
       <%= f.submit 'Upload Picture', :class => 'btn btn-primary' %>
