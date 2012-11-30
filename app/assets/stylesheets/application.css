@@ -19,3 +19,18 @@ body{
     padding: 5px 0;
     overflow: hidden;
 }
+
+table tr td {
+    vertical-align: middle;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.credits{
+    padding: 20px;
+}
