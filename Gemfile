@@ -58,4 +58,4 @@ gem 'jquery-rails'
 
 # To use debugger
 
-gem 'ruby-debug19'
+#gem 'ruby-debug19'
