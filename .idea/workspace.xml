@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0024430-6c0b-4e03-b26c-1a672c690b24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fiverr.iml" afterPath="$PROJECT_DIR$/.idea/fiverr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ratings/list.html.erb" afterPath="$PROJECT_DIR$/app/views/ratings/list.html.erb" />
     </list>
     <list id="65ee2beb-b571-4e8f-a206-191edee75dfc" name="Failed commit: Default" comment="new html" />
@@ -69,7 +65,7 @@
       <file leaf-file-name="list.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/ratings/list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="81" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6495727">
+            <state line="20" column="89" selection-start="449" selection-end="578" vertical-scroll-proportion="0.66433567">
               <folding />
             </state>
           </provider>
@@ -789,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ratings/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="81" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6495727">
+        <state line="20" column="89" selection-start="449" selection-end="578" vertical-scroll-proportion="0.66433567">
           <folding />
         </state>
       </provider>
