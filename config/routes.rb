@@ -1,9 +1,5 @@
 Fiverr::Application.routes.draw do
-=begin
-  match 'ratings/list' => 'ratings#list'
-  match 'ratings/:won/update/:lost' => 'ratings#update'
-  resources :ratings
-=end
+
 
   match 'ratings/:pic_won/update/:pic_lost' => 'ratings#update'
 
@@ -62,7 +58,7 @@ Fiverr::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'ratings#index'
 
   # See how all your routes lay out with "rake routes"
 

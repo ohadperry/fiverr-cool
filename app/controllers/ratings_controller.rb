@@ -5,13 +5,13 @@ class RatingsController < ApplicationController
   def index
     ratingSize = Rating.count
 
-    @rating1 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
-    @rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
-    while @rating2.pic_url==@rating1.pic_url
-      @rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1)+1])
-    end
-    #@rating1 = Rating.limit(1)
-    #@rating2 = Rating.limit(1)
+    #@rating1 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
+    #@rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
+    #while @rating2.pic_url==@rating1.pic_url
+    #  @rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1)+1])
+    #end
+    @rating1 = Rating.limit(1)
+    @rating2 = Rating.limit(1)
     while @rating2.id==@rating1.id
       @rating2 = Rating.order("RAND()").first
     end
