@@ -11,7 +11,7 @@ class RatingsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index1.html.erb
       format.json { render :json => @rating1, :json => @rating2 }
     end
   end
