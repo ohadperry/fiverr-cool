@@ -25,12 +25,15 @@ table tr td {
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
     text-align: center;
     width: 100%;
 }
 
 .credits{
     padding: 20px;
+    font-family: 'Lucida Grande','Lucida Sans Unicode','Verdana,Arial,Helvetica,sans-serif';
+}
+
+.big_notice{
+    font-size: 3.5em;
 }

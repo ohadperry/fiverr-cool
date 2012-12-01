@@ -1,15 +1,7 @@
-<p id="notice"><%= notice %></p>
+<br>
+<br>
+<p id="notice" class="big_notice"><%= notice %></p>
+<% if defined? @notice_small  %>
+    <p id="small_notice" class="small_notice"><%= @notice_small %></p>
+<% end %>
 
-<p>
-  <b>Pic url:</b>
-  <%= @rating.pic_url %>
-</p>
-
-<p>
-  <b>Rating:</b>
-  <%= @rating.rating %>
-</p>
-
-
-<%= link_to 'Edit', edit_rating_path(@rating) %> |
-<%= link_to 'Back', ratings_path %>

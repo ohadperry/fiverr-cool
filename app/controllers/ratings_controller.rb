@@ -3,17 +3,11 @@ class RatingsController < ApplicationController
   # GET /ratings.json
 
   def index
-    ratingSize = Rating.count
 
-    #@rating1 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
-    #@rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1) +1])
-    #while @rating2.pic_url==@rating1.pic_url
-    #  @rating2 = Rating.first(:conditions => ["id = ?", rand(ratingSize-1)+1])
-    #end
-    @rating1 = Rating.limit(1)
-    @rating2 = Rating.limit(1)
-    while @rating2.id==@rating1.id
-      @rating2 = Rating.order("RAND()").first
+    @rating1 = Rating.order("random()").first
+    @rating2 = Rating.order("random() ").first
+    if @rating2.id==@rating1.id
+      @rating2 = Rating.order("random()").first
     end
 
     respond_to do |format|
@@ -65,9 +59,11 @@ class RatingsController < ApplicationController
   def create
     @rating = Rating.new(params[:rating])
 
+
     respond_to do |format|
       if @rating.save
-        format.html { redirect_to @rating, :notice => 'Rating was successfully created.' }
+        flash[:notice_small] = 'Your photo has been uploaded. good luck with its coolness rating!'
+        format.html { redirect_to @rating, :notice => 'Got It!' }
         format.json { render :json => @rating, :status => :created, :location => @rating }
       else
         format.html { render :action => "new" }
@@ -97,7 +93,7 @@ class RatingsController < ApplicationController
       respond_to do |format|
         if pic_won.update_attribute(:rating, pic_won_new_rating) and
             pic_lost.update_attribute(:rating, pic_lost_new_rating) and
-            format.html { redirect_to ratings_url, :notice => 'Rating was successfully updated.' }
+            format.html { redirect_to ratings_url, :notice => 'got it, rate another one?' }
           format.json { head :no_content }
         else
           format.html { render :action => "edit" }

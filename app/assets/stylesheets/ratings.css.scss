@@ -21,12 +21,14 @@ body{
 }
 
 .section:hover{
-  box-shadow: 10px 10px 10px blue;
+  box-shadow: 10px 10px 10px gray;
+  border: 2px solid red;
+  background: white;
 }
-.section:hover:before{
-  content:"Choose Me!!";
-  color: red;
-}
+//.section:hover:before{
+//  content:"Choose Me!!";
+//  color: red;
+//}
 .left{
   float: left;
   margin: 0 0 0 30px;
@@ -58,9 +60,5 @@ body{
   //padding: 5px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
-
-}
-
-.image_container{
 
 }
