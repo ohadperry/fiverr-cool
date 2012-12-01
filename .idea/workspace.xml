@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0024430-6c0b-4e03-b26c-1a672c690b24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/ratings/list.html.erb" afterPath="$PROJECT_DIR$/app/views/ratings/list.html.erb" />
     </list>
     <list id="65ee2beb-b571-4e8f-a206-191edee75dfc" name="Failed commit: Default" comment="new html" />
@@ -46,19 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="list.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/ratings/list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="9" selection-start="455" selection-end="455" vertical-scroll-proportion="-12.892858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="17" selection-start="448" selection-end="448" vertical-scroll-proportion="0.4959217">
+            <state line="19" column="13" selection-start="455" selection-end="583" vertical-scroll-proportion="0.61709404">
               <folding />
             </state>
           </provider>
@@ -96,8 +85,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/ratings.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/ratings/list.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/views/ratings/list.html.erb" />
       </list>
     </option>
   </component>
@@ -745,16 +734,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ratings/list.html.erb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="9" selection-start="455" selection-end="455" vertical-scroll-proportion="-12.892858">
+        <state line="16" column="17" selection-start="448" selection-end="448" vertical-scroll-proportion="0.4959217">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/views/ratings/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="448" selection-end="448" vertical-scroll-proportion="0.4959217">
+        <state line="19" column="13" selection-start="455" selection-end="583" vertical-scroll-proportion="0.61709404">
           <folding />
         </state>
       </provider>
