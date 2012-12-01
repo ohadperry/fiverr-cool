@@ -62,8 +62,8 @@ class RatingsController < ApplicationController
 
     respond_to do |format|
       if @rating.save
-        flash[:notice_small] = 'Your photo has been uploaded. good luck with its coolness rating!'
-        format.html { redirect_to @rating, :notice => 'Got It!' }
+        format.html { redirect_to @rating, :notice => 'Got It!',
+                                  :flash => {:notice_small => 'Your photo has been uploaded. good luck with its coolness rating!'} }
         format.json { render :json => @rating, :status => :created, :location => @rating }
       else
         format.html { render :action => "new" }

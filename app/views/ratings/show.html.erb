@@ -1,7 +1,7 @@
 <br>
 <br>
 <p id="notice" class="big_notice"><%= notice %></p>
-<% if defined? @notice_small  %>
-    <p id="small_notice" class="small_notice"><%= @notice_small %></p>
+<% if defined? flash[:notice_small]  %>
+    <p id="small_notice" class="small_notice"><%= flash[:notice_small] %></p>
 <% end %>
 
