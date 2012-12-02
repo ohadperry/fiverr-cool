@@ -1,18 +1,20 @@
 <div id="main" xmlns="http://www.w3.org/1999/html">
-  <h1>CoolOrNot</h1>
+  <h1>Which Pic Is Cooler?</h1>
   <br>
 
-  <div class="section left">
-    <a href="/ratings/<%= @rating1.id %>/update/<%= @rating2.id %>">
-      <%= image_tag(@rating1.pic_url, :class => 'select-img') %>
-    </a>
-  </div>
-  <div class="section right">
-    <a href="/ratings/<%= @rating2.id %>/update/<%= @rating1.id %>">
-      <%= image_tag(@rating2.pic_url, :class => 'select-img') %>
-    </a>
-  </div>
+  <div class="row centered">
+    <div class="span5">
+      <a href="/ratings/<%= @rating1.id %>/update/<%= @rating2.id %>">
+        <%= image_tag(@rating1.pic_url, :class => 'select-img') %>
+      </a>
+    </div>
 
+    <div class="span5">
+      <a href="/ratings/<%= @rating2.id %>/update/<%= @rating1.id %>">
+        <%= image_tag(@rating2.pic_url, :class => 'select-img') %>
+      </a>
+    </div>
+  </div>
 </div>
 
 

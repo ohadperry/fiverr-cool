@@ -13,16 +13,18 @@
         </div>
     <% end %>
 
-    <p>
-      <%= f.label :pic_url, 'Upload your own' %>
 
-      <%= f.file_field :pic_url %>
-    </p>
-        <br>
-    <p>
-      <%= f.label :remote_pic_url_url, 'Or provide with an image url' %>
-      <%= f.text_field :remote_pic_url_url %>
-    </p>
+    <%= f.label :pic_url, 'Upload your own', :class => 'bold' %>
+
+    <%= f.file_field :pic_url %>
+
+    <br>
+    <br>
+
+    <%= f.label :remote_pic_url_url,
+                'Or provide with an image url', :class => 'bold' %>
+    <%= f.text_field :remote_pic_url_url %>
+
 
     <div class="actions">
       <%= f.submit 'Upload Picture', :class => 'btn btn-primary' %>

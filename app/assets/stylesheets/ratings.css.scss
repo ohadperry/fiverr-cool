@@ -12,12 +12,14 @@ body{
 }
 .section{
   width: 43%;
+  min-width: 200px;
   padding: 1%;
   overflow: hidden;
   border: 1px solid black;
   border-radius: 10px;
-  max-height: 500px;
+  //max-height: 500px;
   cursor: pointer;
+  margin: 0 0 20px 0 ;
 }
 
 .section:hover{
@@ -29,9 +31,11 @@ body{
 //  content:"Choose Me!!";
 //  color: red;
 //}
+
+/*rate*/
 .left{
   float: left;
-  margin: 0 0 0 30px;
+  margin: 0 0 20px 30px;
 }
 
 .right{
@@ -40,7 +44,7 @@ body{
 }
 
 .select-img {
-  height:450px;
+  //height:450px;
   width: 100%;
   margin: 0 auto;
 }
@@ -53,12 +57,21 @@ body{
 }
 
 .list_pic{
-  width: 400px;
-  height: 400px;
+  width: 70%;
+  //height: 400px;
+  min-width: 200px;
   margin: 0 0 20px 0;
   border: 1px solid black;
   //padding: 5px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
 
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.centered{
+  margin: 0 auto;
 }
