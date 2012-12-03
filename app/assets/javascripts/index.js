@@ -5,4 +5,5 @@ $(function () {
     $('.nav a[href="' + window.location.pathname + '"]')
         .closest('li')
         .addClass(active);
+
 });
