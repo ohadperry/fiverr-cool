@@ -27,10 +27,6 @@ body{
   border: 2px solid red;
   background: white;
 }
-//.section:hover:before{
-//  content:"Choose Me!!";
-//  color: red;
-//}
 
 /*rate*/
 .left{
@@ -44,7 +40,6 @@ body{
 }
 
 .select-img {
-  //height:450px;
   width: 100%;
   margin: 0 auto;
 }
@@ -57,12 +52,10 @@ body{
 }
 
 .list_pic{
-  width: 70%;
-  //height: 400px;
+  width: 60%;
   min-width: 200px;
   margin: 0 0 20px 0;
   border: 1px solid black;
-  //padding: 5px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
 
