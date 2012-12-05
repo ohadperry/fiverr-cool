@@ -1,7 +1,16 @@
 <div id="main">
   <h1>The Pics List</h1>
+
   <p>Ordered by rating</p>
 
+  <p>Total of <%= @number_of_pics %> images</p>
+  <a class="btn" href="ratings/list">all pics</a>
+  <% i=1
+     while i<@number_of_pics %>
+         <a class="btn" href="ratings/list/<%= i%>"><%= i%></a>
+  <% i += 10
+     end %>
+  <div class="clearfix"></div><br>
   <table class="picsTable">
     <tbody>
     <% @pics.each do |pic| %>
@@ -13,7 +22,7 @@
           </td>
           <td class="hidden-phone">Rating:<br><%= pic.rating.round(0) %></td>
           <td><%= link_to 'Delete This Pic', pic,
-                               :confirm => 'Are you sure?', :method => :delete %></td>
+                          :confirm => 'Are you sure?', :method => :delete %></td>
     <% end %>
     </tbody>
   </table>

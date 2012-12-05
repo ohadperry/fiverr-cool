@@ -25,7 +25,7 @@
       <div class="nav-collapse">
         <ul class="nav">
           <li>
-            <%= link_to 'Rate', ratings_path     %>
+            <%= link_to 'Rate', ratings_path %>
           </li>
           <li>
             <%= link_to 'All Pics', '/ratings/list' %>
@@ -39,6 +39,12 @@
     </div>
   </div>
 </div>
+
+<p class="notice"><%= notice %></p>
+
+<p class="alert"><%= alert %></p>
+
+
 <div class="container">
   <%= yield %>
 </div>

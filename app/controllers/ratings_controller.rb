@@ -6,6 +6,7 @@ class RatingsController < ApplicationController
 
     @rating1 = Rating.order("random()").first
     @rating2 = Rating.order("random() ").first
+    #bug- if -> while causes endless loop sometimes
     if @rating2.id==@rating1.id
       @rating2 = Rating.order("random()").first
     end
@@ -19,7 +20,10 @@ class RatingsController < ApplicationController
 
   def list
 
+    page_number = !params[:page_number].nil? ? "" : ""
+
     @pics = Rating.order('rating desc')
+    @number_of_pics = @pics.length;
 
     respond_to do |format|
       format.html # list.html.erb
