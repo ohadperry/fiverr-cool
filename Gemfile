@@ -11,7 +11,7 @@ gem 'json'
 
 gem 'fog'
 
-gem 'devise' , "~> 1.4.8"
+# gem 'devise'
 
 
 # Gems used only for assets and not required
