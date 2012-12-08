@@ -22,11 +22,10 @@
             </div>
           </td>
           <td class="hidden-phone">Rating:<br><%= pic.rating.round(0) %></td>
-          <% if  user_signed_in? &&  current_user.id==1
-          %>
-          <td><%= link_to 'Delete This Pic', pic,
-                          :confirm => 'Are you sure?', :method => :delete %></td>
-           <%end%>
+          <% #if  user_signed_in? &&  current_user.id==1%>
+         <!-- <td><%= link_to 'Delete This Pic', pic,
+                          :confirm => 'Are you sure?', :method => :delete %></td> -->
+           <%#end%>
     <% end %>
     </tbody>
   </table>
