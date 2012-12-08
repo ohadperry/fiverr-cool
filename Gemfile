@@ -40,9 +40,12 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-
+#images
 gem 'rmagick'
 gem 'carrierwave'
+
+#get DB pages
+gem 'kaminari'
 
 gem 'jquery-rails'
 

@@ -23,33 +23,40 @@
       </a>
       <%= link_to 'Fiverr Cool Picture Contest', ratings_url, :class => 'brand' %>
       <div class="nav-collapse">
-        <ul class="nav">
-          <li>
-            <%= link_to 'Rate', ratings_path %>
-          </li>
-          <li>
-            <%= link_to 'All Pics', '/ratings/list' %>
-          </li>
-          <li>
-            <%= link_to 'Upload Your Own', new_rating_path %>
-          </li>
-        </ul>
+            <ul class="nav">
+              <li>
+                <%= link_to 'Rate', ratings_path %>
+              </li>
+              <li>
+                <%= link_to 'All Pics', '/ratings/list' %>
+              </li>
+              <li>
+                <%= link_to 'Upload Your Own', new_rating_path %>
+              </li>
+            </ul>
       </div>
       <!--/.nav-collapse -->
     </div>
   </div>
 </div>
 
-<p class="notice"><%= notice %></p>
+<!--<p class="notice"><%= notice %></p>-->
 
-<p class="alert"><%= alert %></p>
+<!--<p class="alert"><%= alert %></p>-->
 
 
 <div class="container">
   <%= yield %>
 </div>
 <footer>
-  <div class="credits">Designed By: OP</div>
+  <div class="credits">Designed By: OP.
+    <%= link_to "Suggestions?",
+                "mailto:ohadpartuck@gmail.com?subject=fiverr image contest suggestions",
+                :target => "_blank"%></div>
+  <%= if user_signed_in?
+      link_to "Sign Out", destroy_user_session_path, :method => :delete
+     end
+  %>
 
 </footer>
 

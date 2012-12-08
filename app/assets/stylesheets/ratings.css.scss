@@ -52,13 +52,9 @@ body{
 }
 
 .list_pic{
-  width: 60%;
-  min-width: 200px;
-  margin: 0 0 20px 0;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
-
 }
 
 .bold{
@@ -67,4 +63,17 @@ body{
 
 .centered{
   margin: 0 auto;
+}
+
+.current{
+  display: none;
+
+}
+
+.page a, .next a, .last a, .prev a, .first a{
+  background: #ffffff;
+}
+.page a:hover, .next a:hover, .last a:hover, .prev a:hover, .first a:hover{
+  background: #ffffff;
+  color: #8b0000;
 }

@@ -1,7 +1,10 @@
 Fiverr::Application.routes.draw do
 
 
+devise_for :users
+
   match 'ratings/:pic_won/update/:pic_lost' => 'ratings#update'
+  match 'ratings/list/:page' => 'ratings#list'
 
   resources :ratings do
       get 'list', :on => :collection

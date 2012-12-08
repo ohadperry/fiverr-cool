@@ -20,9 +20,11 @@ class RatingsController < ApplicationController
 
   def list
 
-    page_number = !params[:page_number].nil? ? "" : ""
+    page_number = params[:page].nil? ? 1 : params[:page]
+    limit = 5 #params[:page].nil? ? 1000 : 5
 
-    @pics = Rating.order('rating desc')
+
+    @pics = Rating.order('rating desc').page(page_number).per(limit)
     @number_of_pics = @pics.length;
 
     respond_to do |format|
@@ -62,7 +64,6 @@ class RatingsController < ApplicationController
   # POST /ratings.json
   def create
     @rating = Rating.new(params[:rating])
-
 
     respond_to do |format|
       if @rating.save
