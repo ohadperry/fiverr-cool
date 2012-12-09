@@ -1,6 +1,5 @@
 <%= form_for @rating, :html => {:multipart => true} do |f| %>
     <br>
-    <br>
     <% if @rating.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
@@ -12,7 +11,12 @@
           </ul>
         </div>
     <% end %>
-
+    <div class="visible-phone">
+      <p>pls take the picture like this:
+        <%= image_tag('iphone-camera-landscape.jpg', :class => 'iphone-image') %>
+      </p>
+    </div>
+    <br>
 
     <%= f.label :pic_url, 'Upload your own', :class => 'bold' %>
 
