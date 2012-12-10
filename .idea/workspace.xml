@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0024430-6c0b-4e03-b26c-1a672c690b24" name="Default" comment="" />
+    <list default="true" id="a0024430-6c0b-4e03-b26c-1a672c690b24" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+    </list>
     <list id="65ee2beb-b571-4e8f-a206-191edee75dfc" name="Failed commit: Default" comment="new html" />
     <ignored path="fiverr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,9 +75,9 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="35" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.669708">
+            <state line="36" column="40" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.669708">
               <folding>
-                <element signature="e#1677#1788#0" expanded="true" />
+                <element signature="e#1678#1789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -824,9 +827,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.669708">
+        <state line="36" column="40" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.669708">
           <folding>
-            <element signature="e#1677#1788#0" expanded="true" />
+            <element signature="e#1678#1789#0" expanded="true" />
           </folding>
         </state>
       </provider>
