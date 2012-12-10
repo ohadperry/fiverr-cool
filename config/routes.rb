@@ -5,6 +5,7 @@ Fiverr::Application.routes.draw do
 
   match 'ratings/:pic_won/update/:pic_lost' => 'ratings#update'
   match 'ratings/list/:page' => 'ratings#list'
+  match 'ratings/recent' => 'ratings#recent'
 
   resources :ratings do
       get 'list', :on => :collection

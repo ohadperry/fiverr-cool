@@ -44,6 +44,10 @@ class RatingsController < ApplicationController
     end
   end
 
+  def recent
+    @pics = Rating.where(:created_at => ["created_at > ?",  7.days.ago])
+
+  end
   # GET /ratings/new
   # GET /ratings/new.json
   def new
