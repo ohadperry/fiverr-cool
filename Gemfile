@@ -41,7 +41,7 @@ group :development, :test do
 end
 
 #images
-gem 'rmagick'
+#gem 'rmagick'
 gem 'carrierwave'
 
 #get DB pages

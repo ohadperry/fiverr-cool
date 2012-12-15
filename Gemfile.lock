@@ -126,7 +126,6 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
-    rmagick (2.13.1)
     ruby-hmac (0.4.0)
     rvm-capistrano (1.2.7)
       capistrano (>= 2.0.0)
@@ -172,7 +171,6 @@ DEPENDENCIES
   less-rails
   pg
   rails (= 3.2.9)
-  rmagick
   rvm-capistrano
   sass-rails (~> 3.2.3)
   sqlite3
