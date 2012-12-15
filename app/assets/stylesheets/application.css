@@ -15,6 +15,10 @@ body{
 
 }
 
+.cool{
+	font-size: 11px;
+}
+
 .container{
     padding: 5px 0;
     overflow: hidden;
