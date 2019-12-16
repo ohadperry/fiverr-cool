@@ -48,7 +48,7 @@ GEM
     coffee-script-source (1.4.0)
     commonjs (0.2.6)
     erubis (2.7.0)
-    excon (0.16.10)
+    excon (0.71.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     fog (1.7.0)
